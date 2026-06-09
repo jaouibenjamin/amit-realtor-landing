@@ -16,7 +16,7 @@
   <script>
     /* מיתוג — שנה צבעים כאן להתאמה ללוגו */
     tailwind.config = { theme: { extend: {
-      colors: { ink:'#101013', sand:'#f5f5f4', char:'#ffffff', stone:'#e4e3e1', paper:'#16161a', gold:'#6b6b72', 'gold-d':'#46464d', olive:'#5a5a61' },
+      colors: { ink:'#080d18', sand:'#0c1322', char:'#16223a', stone:'#26344f', paper:'#eaeff7', gold:'#aebfd8', 'gold-d':'#c9d5e8', olive:'#90a2bd' },
       fontFamily: { display:['"Frank Ruhl Libre"','serif'], displayLat:['"Cormorant Garamond"','serif'], body:['"Heebo"','sans-serif'] },
     } } };
   </script>
@@ -465,7 +465,7 @@
     const onScroll=()=>{ const vh=innerHeight||800, y=scrollY, p=Math.min(y/vh,1);
       if(heroPhoto){ heroPhoto.style.filter='blur('+(p*8).toFixed(1)+'px) brightness('+(1-p*0.45).toFixed(2)+')'; heroPhoto.style.transform='scale('+(1+p*0.08).toFixed(3)+')'; }
       if(heroInner){ heroInner.style.opacity=Math.max(0,1-p*1.4).toFixed(2); heroInner.style.transform='translateY('+(p*-30).toFixed(0)+'px)'; }
-      const s=y>vh*0.66; nav.classList.toggle('bg-sand/90',s); nav.classList.toggle('backdrop-blur',s); nav.classList.toggle('shadow-sm',s); nav.classList.toggle('border-b',s); nav.classList.toggle('border-stone',s); nav.classList.toggle('text-white',!s); nav.classList.toggle('text-ink',s); };
+      const s=y>vh*0.66; nav.classList.toggle('bg-sand/90',s); nav.classList.toggle('backdrop-blur',s); nav.classList.toggle('shadow-sm',s); nav.classList.toggle('border-b',s); nav.classList.toggle('border-stone',s); };
     onScroll(); addEventListener('scroll',onScroll);
     const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
