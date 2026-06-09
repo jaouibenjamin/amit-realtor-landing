@@ -1,21 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 96" role="img" aria-label="AMIT MAHRABANI">
-  <!-- Wordmark recreation from brand cap. Monochrome, uses currentColor so it adapts to dark/light backgrounds.
-       Replace with the original vector file when available. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 132" role="img" aria-label="AMIT MAHRABANI — תיווך · נדל״ן · יזמות">
+  <!-- Brand wordmark recreation. Monochrome, currentColor → adapts to dark/light. Replace with original vector if supplied. -->
   <g fill="currentColor">
-    <!-- AMIT — geometric, the 'A' drawn as a bar-less triangle to match the brand mark -->
-    <!-- A (triangle) -->
     <path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/>
-    <!-- M -->
     <path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/>
-    <!-- I -->
     <rect x="103" y="12" width="7.5" height="48"/>
-    <!-- T -->
     <path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/>
   </g>
-  <!-- MAHRABANI — set in a light geometric face, wide tracking -->
-  <text x="130" y="82" text-anchor="middle" fill="currentColor"
-        font-family="'Futura','Century Gothic','Heebo','Arial',sans-serif"
-        font-size="15" font-weight="400" letter-spacing="3.5">MAHRABANI</text>
-  <!-- underline -->
-  <rect x="20" y="90" width="220" height="2.2" fill="currentColor"/>
+  <text x="130" y="82" text-anchor="middle" fill="currentColor" font-family="'Futura','Century Gothic','Heebo','Arial',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text>
+  <rect x="22" y="90" width="216" height="1.6" fill="currentColor"/>
+  <text x="130" y="110" text-anchor="middle" fill="currentColor" font-family="'Heebo','Arial',sans-serif" font-size="12.5" letter-spacing="1.5" direction="rtl">תיווך · נדל״ן · יזמות</text>
 </svg>

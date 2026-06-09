@@ -38,10 +38,10 @@
 <body class="bg-sand text-ink antialiased">
 
   <!-- NAV -->
-  <header class="fixed inset-x-0 top-0 z-40 text-white transition-all" id="nav">
+  <header class="fixed inset-x-0 top-0 z-40 text-ink transition-all" id="nav">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 md:px-8">
       <a href="#top" aria-label="עמית מהרבני נדל״ן" class="block">
-        <svg viewBox="0 0 260 96" class="h-11 w-auto" fill="currentColor" aria-hidden="true"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="20" y="90" width="220" height="2.2"/></svg>
+        <svg viewBox="0 0 260 96" class="h-12 w-auto" fill="currentColor" aria-hidden="true"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="20" y="90" width="220" height="2.2"/></svg>
       </a>
       <nav class="hidden items-center gap-7 text-sm md:flex">
         <a href="#flagship" class="hover:text-gold transition" data-i18n="nav.flagship">הנכס המוביל</a>
@@ -67,27 +67,31 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="top" class="relative grain min-h-screen overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2400&auto=format&fit=crop');"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/45 to-ink/30"></div>
-    <div class="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-5 pb-20 pt-32 md:px-8 md:pb-28">
-      <p class="reveal hairline mb-4 text-xs font-medium uppercase text-gold md:text-sm" data-i18n="hero.kicker">להבים · רמות · באר שבע</p>
-      <h1 class="reveal font-display text-4xl font-bold leading-tight text-white md:text-6xl lg:text-7xl" style="transition-delay:.1s" data-i18n="hero.title">הבית הבא שלכם מתחיל כאן.</h1>
-      <p class="reveal mt-5 max-w-xl text-base leading-relaxed text-white/85 md:text-lg" style="transition-delay:.2s" data-i18n="hero.sub">נכס דגל נבחר במיקום מבוקש. ליווי אישי, צילום מקצועי, ושקיפות מלאה לאורך כל הדרך.</p>
-      <div class="reveal mt-8 flex flex-wrap gap-x-8 gap-y-3 text-white/90" style="transition-delay:.3s">
-        <div class="flex items-baseline gap-2"><span class="font-display text-2xl font-bold text-gold">5</span><span class="text-sm" data-i18n="spec.rooms">חדרים</span></div>
-        <div class="flex items-baseline gap-2"><span class="font-display text-2xl font-bold text-gold">220</span><span class="text-sm" data-i18n="spec.built">מ״ר בנוי</span></div>
-        <div class="flex items-baseline gap-2"><span class="font-display text-2xl font-bold text-gold">500</span><span class="text-sm" data-i18n="spec.lot">מ״ר מגרש</span></div>
-        <div class="flex items-baseline gap-2"><span class="font-display text-2xl font-bold text-gold">₪—</span><span class="text-sm" data-i18n="spec.price">מחיר לפי פנייה</span></div>
+  <!-- HERO — Ivory editorial -->
+  <section id="top" class="relative grain min-h-screen overflow-hidden bg-sand">
+    <div class="relative z-10 mx-auto flex min-h-screen max-w-4xl flex-col items-center justify-center px-5 py-32 text-center">
+      <div class="reveal text-ink">
+        <svg viewBox="0 0 260 132" class="mx-auto h-36 w-auto md:h-44" fill="currentColor" aria-label="עמית מהרבני נדל״ן · תיווך · נדל״ן · יזמות">
+          <g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g>
+          <text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text>
+          <rect x="22" y="90" width="216" height="1.6"/>
+          <text x="130" y="110" text-anchor="middle" font-family="'Heebo',sans-serif" font-size="12.5" letter-spacing="1.5" direction="rtl">תיווך · נדל״ן · יזמות</text>
+        </svg>
       </div>
-      <div class="reveal mt-9 flex flex-wrap items-center gap-4" style="transition-delay:.4s">
-        <a href="#" data-wa-main target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-semibold text-white shadow-xl shadow-black/30 transition hover:scale-[1.03] hover:brightness-105">
+      <div class="reveal mx-auto mt-9 h-px w-14 bg-gold" style="transition-delay:.1s"></div>
+      <p class="reveal hairline mt-8 text-xs font-medium uppercase text-gold md:text-sm" style="transition-delay:.15s" data-i18n="hero.kicker">להבים · רמות · באר שבע</p>
+      <h1 class="reveal mt-4 font-display text-4xl font-bold leading-tight text-ink md:text-6xl" style="transition-delay:.2s" data-i18n="hero.title">הבית הבא שלכם מתחיל כאן.</h1>
+      <p class="reveal mx-auto mt-5 max-w-xl text-base leading-relaxed text-olive md:text-lg" style="transition-delay:.3s" data-i18n="hero.sub">נכס דגל נבחר במיקום מבוקש. ליווי אישי, צילום מקצועי, ושקיפות מלאה לאורך כל הדרך.</p>
+      <div class="reveal mt-9 flex flex-wrap items-center justify-center gap-4" style="transition-delay:.4s">
+        <a href="#" data-wa-main target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-ink/10 transition hover:scale-[1.03] hover:brightness-105">
           <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.359zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span data-i18n="hero.cta">דברו עם עמית עכשיו</span>
         </a>
-        <a href="#flagship" class="text-sm font-medium text-white/80 underline-offset-4 hover:text-white hover:underline" data-i18n="hero.more">לפרטי הנכס ↓</a>
+        <a href="#flagship" class="text-sm font-medium text-olive underline-offset-4 hover:text-gold hover:underline" data-i18n="hero.more">לפרטי הנכס ↓</a>
       </div>
+    </div>
+    <div class="pointer-events-none absolute inset-x-0 bottom-0 text-gold/20" aria-hidden="true">
+      <svg viewBox="0 0 1200 130" class="h-24 w-full md:h-28" fill="currentColor" preserveAspectRatio="xMidYMax meet"><g><rect x="0" y="124" width="1200" height="2"/><path d="M60 124 V86 H250 V124 Z"/><g><rect x="64" y="80" width="14" height="8"/><rect x="92" y="80" width="14" height="8"/><rect x="120" y="80" width="14" height="8"/><rect x="148" y="80" width="14" height="8"/><rect x="176" y="80" width="14" height="8"/><rect x="204" y="80" width="14" height="8"/><rect x="232" y="80" width="14" height="8"/></g><path d="M270 124 V60 H318 V124 Z"/><rect x="282" y="44" width="24" height="18"/><g><rect x="272" y="54" width="9" height="7"/><rect x="289" y="54" width="9" height="7"/><rect x="307" y="54" width="9" height="7"/></g><path d="M520 124 V74 H700 V124 Z"/><path d="M560 74 a50 50 0 0 1 100 0 Z"/><rect x="606" y="14" width="8" height="14"/><path d="M740 124 V92 H812 V124 Z"/><path d="M748 92 a28 28 0 0 1 56 0 Z"/><path d="M860 124 V88 H1080 V124 Z"/><g><rect x="866" y="82" width="14" height="8"/><rect x="894" y="82" width="14" height="8"/><rect x="922" y="82" width="14" height="8"/><rect x="950" y="82" width="14" height="8"/><rect x="978" y="82" width="14" height="8"/><rect x="1006" y="82" width="14" height="8"/><rect x="1034" y="82" width="14" height="8"/><rect x="1062" y="82" width="14" height="8"/></g><path d="M450 124 q-9 -40 9 -64 q18 24 9 64 Z"/><path d="M1130 124 q-8 -34 8 -54 q16 20 8 54 Z"/></g></svg>
     </div>
   </section>
 
@@ -232,35 +236,35 @@
     </div>
   </section>
 
-  <!-- ABOUT + TESTIMONIALS -->
-  <section id="about" class="relative grain bg-olive py-20 text-sand md:py-28">
+  <!-- ABOUT + TESTIMONIALS — light editorial -->
+  <section id="about" class="relative grain bg-sand py-20 md:py-28">
     <div class="mx-auto max-w-7xl px-5 md:px-8">
       <div class="grid gap-14 lg:grid-cols-[1fr_1.1fr]">
         <div class="reveal">
           <p class="hairline mb-3 text-xs font-medium uppercase text-gold" data-i18n="about.kicker">הסוכן שלכם</p>
           <h2 class="font-display text-3xl font-bold md:text-4xl" data-i18n="about.title">על עמית מהרבני</h2>
-          <p class="mt-5 leading-relaxed text-sand/85" data-i18n="about.desc">עמית מהרבני מלווה משפחות ורוכשי נכסי יוקרה באזור הנגב — מלהבים ועד באר שבע. זמינות אישית, היכרות עמוקה עם השכונות, ושירות שקוף מהסיור הראשון ועד מסירת המפתח.</p>
-          <div class="mt-8 flex flex-wrap gap-6 text-sand/90">
-            <div><div class="font-display text-3xl font-bold text-gold">+10</div><div class="text-sm" data-i18n="about.s1">שנות ניסיון</div></div>
-            <div><div class="font-display text-3xl font-bold text-gold">+200</div><div class="text-sm" data-i18n="about.s2">עסקאות</div></div>
-            <div><div class="font-display text-3xl font-bold text-gold">100%</div><div class="text-sm" data-i18n="about.s3">ליווי אישי</div></div>
+          <p class="mt-5 leading-relaxed text-olive" data-i18n="about.desc">עמית מהרבני מלווה משפחות ורוכשי נכסי יוקרה באזור הנגב — מלהבים ועד באר שבע. זמינות אישית, היכרות עמוקה עם השכונות, ושירות שקוף מהסיור הראשון ועד מסירת המפתח.</p>
+          <div class="mt-8 flex flex-wrap gap-8 text-ink">
+            <div><div class="font-display text-3xl font-bold text-gold">+10</div><div class="text-sm text-olive" data-i18n="about.s1">שנות ניסיון</div></div>
+            <div><div class="font-display text-3xl font-bold text-gold">+200</div><div class="text-sm text-olive" data-i18n="about.s2">עסקאות</div></div>
+            <div><div class="font-display text-3xl font-bold text-gold">100%</div><div class="text-sm text-olive" data-i18n="about.s3">ליווי אישי</div></div>
           </div>
         </div>
         <div class="reveal space-y-5" style="transition-delay:.15s">
-          <figure class="rounded-2xl bg-sand/10 p-6 ring-1 ring-sand/15 backdrop-blur">
+          <figure class="rounded-2xl bg-white p-6 ring-1 ring-stone shadow-sm">
             <div class="mb-2 text-gold">★★★★★</div>
-            <blockquote class="leading-relaxed text-sand/90" data-i18n="t1.q">„ליווי מקצועי ואדיב מהרגע הראשון. עמית הבין בדיוק מה חיפשנו ומצא לנו בית מושלם בלהבים."</blockquote>
-            <figcaption class="mt-3 text-sm text-sand/70" data-i18n="t1.a">— משפחת [שם], להבים</figcaption>
+            <blockquote class="leading-relaxed text-ink" data-i18n="t1.q">„ליווי מקצועי ואדיב מהרגע הראשון. עמית הבין בדיוק מה חיפשנו ומצא לנו בית מושלם בלהבים."</blockquote>
+            <figcaption class="mt-3 text-sm text-olive" data-i18n="t1.a">— משפחת [שם], להבים</figcaption>
           </figure>
-          <figure class="rounded-2xl bg-sand/10 p-6 ring-1 ring-sand/15 backdrop-blur">
+          <figure class="rounded-2xl bg-white p-6 ring-1 ring-stone shadow-sm">
             <div class="mb-2 text-gold">★★★★★</div>
-            <blockquote class="leading-relaxed text-sand/90" data-i18n="t2.q">„שקיפות מלאה לאורך כל העסקה. הרגשנו בידיים טובות."</blockquote>
-            <figcaption class="mt-3 text-sm text-sand/70" data-i18n="t2.a">— [שם], באר שבע</figcaption>
+            <blockquote class="leading-relaxed text-ink" data-i18n="t2.q">„שקיפות מלאה לאורך כל העסקה. הרגשנו בידיים טובות."</blockquote>
+            <figcaption class="mt-3 text-sm text-olive" data-i18n="t2.a">— [שם], באר שבע</figcaption>
           </figure>
-          <figure class="rounded-2xl bg-sand/10 p-6 ring-1 ring-sand/15 backdrop-blur">
+          <figure class="rounded-2xl bg-white p-6 ring-1 ring-stone shadow-sm">
             <div class="mb-2 text-gold">★★★★★</div>
-            <blockquote class="leading-relaxed text-sand/90" data-i18n="t3.q">„זמין תמיד, מקצועי, ונתן לנו ביטחון בכל שלב."</blockquote>
-            <figcaption class="mt-3 text-sm text-sand/70" data-i18n="t3.a">— [שם], רמות</figcaption>
+            <blockquote class="leading-relaxed text-ink" data-i18n="t3.q">„זמין תמיד, מקצועי, ונתן לנו ביטחון בכל שלב."</blockquote>
+            <figcaption class="mt-3 text-sm text-olive" data-i18n="t3.a">— [שם], רמות</figcaption>
           </figure>
         </div>
       </div>
@@ -333,7 +337,7 @@
   <!-- FOOTER -->
   <footer class="bg-ink py-12 text-sand/70">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center md:flex-row md:px-8">
-      <svg viewBox="0 0 260 96" class="h-10 w-auto text-sand" fill="currentColor" aria-label="עמית מהרבני נדל״ן"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="20" y="90" width="220" height="2.2"/></svg>
+      <svg viewBox="0 0 260 132" class="h-16 w-auto text-sand" fill="currentColor" aria-label="עמית מהרבני נדל״ן · תיווך · נדל״ן · יזמות"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="22" y="90" width="216" height="1.6"/><text x="130" y="110" text-anchor="middle" font-family="'Heebo',sans-serif" font-size="12.5" letter-spacing="1.5" direction="rtl">תיווך · נדל״ן · יזמות</text></svg>
       <p class="text-sm" data-i18n="footer.tagline">להבים · רמות · באר שבע — נכסי יוקרה ומשפחה</p>
       <p class="text-xs">© <span id="year"></span> · <span data-i18n="footer.rights">כל הזכויות שמורות</span></p>
     </div>
@@ -446,7 +450,7 @@
     /* ===================== nav bg + reveal ===================== */
     document.getElementById('year').textContent=new Date().getFullYear();
     const nav=document.getElementById('nav');
-    const onScroll=()=>{ if(scrollY>40){nav.classList.add('bg-sand/95','backdrop-blur','shadow-sm','text-ink');nav.classList.remove('text-white');} else {nav.classList.remove('bg-sand/95','backdrop-blur','shadow-sm','text-ink');nav.classList.add('text-white');} };
+    const onScroll=()=>{ const s=scrollY>40; nav.classList.toggle('bg-sand/90',s); nav.classList.toggle('backdrop-blur',s); nav.classList.toggle('shadow-sm',s); nav.classList.toggle('border-b',s); nav.classList.toggle('border-stone',s); };
     onScroll(); addEventListener('scroll',onScroll);
     const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));

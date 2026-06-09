@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 130" role="img" aria-label="קו רקיע ירושלים" preserveAspectRatio="xMidYMax meet">
+  <!-- Delicate Old City of Jerusalem skyline silhouette. Uses currentColor; place at low opacity as a refined accent. -->
+  <g fill="currentColor">
+    <!-- ground line -->
+    <rect x="0" y="124" width="1200" height="2"/>
+    <!-- left city wall + crenellations -->
+    <path d="M60 124 V86 H250 V124 Z"/>
+    <g><rect x="64" y="80" width="14" height="8"/><rect x="92" y="80" width="14" height="8"/><rect x="120" y="80" width="14" height="8"/><rect x="148" y="80" width="14" height="8"/><rect x="176" y="80" width="14" height="8"/><rect x="204" y="80" width="14" height="8"/><rect x="232" y="80" width="14" height="8"/></g>
+    <!-- Tower of David -->
+    <path d="M270 124 V60 H318 V124 Z"/>
+    <rect x="282" y="44" width="24" height="18"/>
+    <g><rect x="272" y="54" width="9" height="7"/><rect x="289" y="54" width="9" height="7"/><rect x="307" y="54" width="9" height="7"/></g>
+    <!-- domed building (central) -->
+    <path d="M520 124 V74 H700 V124 Z"/>
+    <path d="M560 74 a50 50 0 0 1 100 0 Z"/>
+    <rect x="606" y="14" width="8" height="14"/>
+    <!-- small dome right -->
+    <path d="M740 124 V92 H812 V124 Z"/>
+    <path d="M748 92 a28 28 0 0 1 56 0 Z"/>
+    <!-- right wall + crenellations -->
+    <path d="M860 124 V88 H1080 V124 Z"/>
+    <g><rect x="866" y="82" width="14" height="8"/><rect x="894" y="82" width="14" height="8"/><rect x="922" y="82" width="14" height="8"/><rect x="950" y="82" width="14" height="8"/><rect x="978" y="82" width="14" height="8"/><rect x="1006" y="82" width="14" height="8"/><rect x="1034" y="82" width="14" height="8"/><rect x="1062" y="82" width="14" height="8"/></g>
+    <!-- two cypress trees -->
+    <path d="M450 124 q-9 -40 9 -64 q18 24 9 64 Z"/>
+    <path d="M1130 124 q-8 -34 8 -54 q16 20 8 54 Z"/>
+  </g>
+</svg>
