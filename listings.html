@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>כל הנכסים — עמית מהרבני נדל״ן</title>
+  <meta name="description" content="כל הנכסים הזמינים למכירה בלהבים, רמות ובאר שבע. סינון לפי אזור, חדרים ומחיר. דברו עם אמית בוואטסאפ." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script>
+    /* מיתוג — חייב להיות זהה ל-index.html */
+    tailwind.config = { theme: { extend: {
+      colors: { ink:'#1c1a17', sand:'#f4efe7', stone:'#e7ddcd', gold:'#b08938', 'gold-d':'#8c6c2a', olive:'#4a4a3c' },
+      fontFamily: { display:['"Frank Ruhl Libre"','serif'], body:['"Heebo"','sans-serif'] },
+    } } };
+  </script>
+  <style>
+    body { font-family:'Heebo',sans-serif; }
+    .font-display { font-family:'Frank Ruhl Libre',serif; }
+    .grain::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");mix-blend-mode:multiply;}
+    .hairline{letter-spacing:.28em;}
+  </style>
+</head>
+
+<body class="bg-sand text-ink antialiased">
+
+  <!-- NAV (זהה ל-index, אך ink על רקע בהיר) -->
+  <header class="sticky top-0 z-40 border-b border-stone bg-sand/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
+      <a href="index.html" class="font-display text-2xl font-bold tracking-tight">עמית מהרבני <span class="text-gold">נדל״ן</span></a>
+      <nav class="hidden items-center gap-7 text-sm md:flex">
+        <a href="index.html" class="hover:text-gold transition">בית</a>
+        <a href="index.html#flagship" class="hover:text-gold transition">הנכס המוביל</a>
+        <a href="listings.html" class="font-semibold text-gold">כל הנכסים</a>
+        <a href="index.html#sold" class="hover:text-gold transition">נמכרו לאחרונה</a>
+        <a href="index.html#about" class="hover:text-gold transition">על אמית</a>
+      </nav>
+      <a href="https://wa.me/972524232314?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%93%D7%A3%20%D7%94%D7%A0%D7%9B%D7%A1%D7%99%D7%9D%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D."
+         target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-black/10 transition hover:brightness-105">
+        <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.359zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        וואטסאפ
+      </a>
+    </div>
+  </header>
+
+  <!-- כותרת עמוד -->
+  <section class="relative grain bg-olive py-14 text-sand md:py-20">
+    <div class="mx-auto max-w-7xl px-5 md:px-8">
+      <p class="hairline mb-3 text-xs font-medium uppercase text-gold">תיק נכסים מלא</p>
+      <h1 class="font-display text-4xl font-bold md:text-5xl">כל הנכסים הזמינים</h1>
+      <p class="mt-4 max-w-2xl text-sand/85">סננו לפי אזור, מספר חדרים וטווח מחיר. מצאתם משהו? לחיצה אחת ואתם בשיחה עם אמית.</p>
+    </div>
+  </section>
+
+  <!-- בר סינון -->
+  <div class="sticky top-[65px] z-30 border-b border-stone bg-sand/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-end gap-4 px-5 py-4 md:px-8">
+      <label class="flex flex-col gap-1 text-xs font-medium text-olive">אזור
+        <select id="f-area" class="min-w-[150px] rounded-lg border border-stone bg-white px-3 py-2 text-sm text-ink">
+          <option value="">הכל</option>
+          <option value="lehavim">להבים</option>
+          <option value="ramot">רמות, באר שבע</option>
+          <option value="beersheva">באר שבע</option>
+        </select>
+      </label>
+      <label class="flex flex-col gap-1 text-xs font-medium text-olive">חדרים
+        <select id="f-rooms" class="min-w-[120px] rounded-lg border border-stone bg-white px-3 py-2 text-sm text-ink">
+          <option value="">הכל</option>
+          <option value="3">3 ומעלה</option>
+          <option value="4">4 ומעלה</option>
+          <option value="5">5 ומעלה</option>
+          <option value="6">6 ומעלה</option>
+        </select>
+      </label>
+      <label class="flex flex-col gap-1 text-xs font-medium text-olive">מחיר עד
+        <select id="f-price" class="min-w-[150px] rounded-lg border border-stone bg-white px-3 py-2 text-sm text-ink">
+          <option value="">ללא הגבלה</option>
+          <option value="1800000">₪1.8M</option>
+          <option value="2500000">₪2.5M</option>
+          <option value="3500000">₪3.5M</option>
+          <option value="5000000">₪5M</option>
+        </select>
+      </label>
+      <button id="f-reset" class="rounded-lg border border-stone bg-white px-4 py-2 text-sm font-medium transition hover:border-gold hover:text-gold">איפוס</button>
+      <span id="count" class="ms-auto self-center text-sm text-olive"></span>
+    </div>
+  </div>
+
+  <!-- רשת נכסים -->
+  <main class="bg-white py-12 md:py-16">
+    <div class="mx-auto max-w-7xl px-5 md:px-8">
+      <div id="grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!--
+          כרטיס נכס. ערכי הסינון נשמרים ב-data-*:
+          data-area = lehavim | ramot | beersheva
+          data-rooms = מספר חדרים (מספר)
+          data-price = מחיר במספרים (לסינון "מחיר עד")
+          data-tag   = family | luxury
+          החלף תמונה/כותרת/מפרט/קישור וואטסאפ. שכפל כרטיס לכל נכס.
+        -->
+        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="lehavim" data-rooms="4" data-price="2200000" data-tag="family">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop" alt="נכס" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white">למשפחות</span>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-gold">להבים</p>
+            <h3 class="mt-1 font-display text-xl font-bold">דירת גן 4 חדרים</h3>
+            <div class="mt-3 flex flex-wrap gap-3 text-sm text-olive"><span>4 חד׳</span><span>·</span><span>110 מ״ר</span><span>·</span><span>גינה</span></div>
+            <p class="mt-2 font-display text-lg font-bold">₪2,200,000</p>
+            <a href="https://wa.me/972524232314?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%93%D7%99%D7%A8%D7%AA%20%D7%94%D7%92%D7%9F%20%D7%91%D7%9C%D7%94%D7%91%D7%99%D7%9D." target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105">פרטים בוואטסאפ</a>
+          </div>
+        </article>
+
+        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="ramot" data-rooms="5" data-price="3200000" data-tag="luxury">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1200&auto=format&fit=crop" alt="נכס" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute top-3 right-3 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white">יוקרה</span>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-gold">רמות, באר שבע</p>
+            <h3 class="mt-1 font-display text-xl font-bold">פנטהאוז עם מרפסת</h3>
+            <div class="mt-3 flex flex-wrap gap-3 text-sm text-olive"><span>5 חד׳</span><span>·</span><span>160 מ״ר</span><span>·</span><span>נוף</span></div>
+            <p class="mt-2 font-display text-lg font-bold">₪3,200,000</p>
+            <a href="https://wa.me/972524232314?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%A4%D7%A0%D7%98%D7%94%D7%90%D7%95%D7%96%20%D7%91%D7%A8%D7%9E%D7%95%D7%AA." target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105">פרטים בוואטסאפ</a>
+          </div>
+        </article>
+
+        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="beersheva" data-rooms="6" data-price="2800000" data-tag="family">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop" alt="נכס" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white">למשפחות</span>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-gold">באר שבע</p>
+            <h3 class="mt-1 font-display text-xl font-bold">קוטג׳ 6 חדרים</h3>
+            <div class="mt-3 flex flex-wrap gap-3 text-sm text-olive"><span>6 חד׳</span><span>·</span><span>180 מ״ר</span><span>·</span><span>2 קומות</span></div>
+            <p class="mt-2 font-display text-lg font-bold">₪2,800,000</p>
+            <a href="https://wa.me/972524232314?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%A7%D7%95%D7%98%D7%92%27%20%D7%91%D7%91%D7%90%D7%A8%20%D7%A9%D7%91%D7%A2." target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105">פרטים בוואטסאפ</a>
+          </div>
+        </article>
+
+        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="lehavim" data-rooms="6" data-price="4200000" data-tag="luxury">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop" alt="נכס" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute top-3 right-3 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white">יוקרה</span>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-gold">להבים</p>
+            <h3 class="mt-1 font-display text-xl font-bold">וילה 6 חדרים עם בריכה</h3>
+            <div class="mt-3 flex flex-wrap gap-3 text-sm text-olive"><span>6 חד׳</span><span>·</span><span>260 מ״ר</span><span>·</span><span>בריכה</span></div>
+            <p class="mt-2 font-display text-lg font-bold">₪4,200,000</p>
+            <a href="https://wa.me/972524232314?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%95%D7%99%D7%9C%D7%94%20%D7%91%D7%9C%D7%94%D7%91%D7%99%D7%9D." target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105">פרטים בוואטסאפ</a>
+          </div>
+        </article>
+
+        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="beersheva" data-rooms="3" data-price="1450000" data-tag="family">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop" alt="נכס" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white">למשפחות</span>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-gold">באר שבע</p>
+            <h3 class="mt-1 font-display text-xl font-bold">דירת 3 חדרים מחודשת</h3>
+            <div class="mt-3 flex flex-wrap gap-3 text-sm text-olive"><span>3 חד׳</span><span>·</span><span>78 מ״ר</span><span>·</span><span>מרפסת</span></div>
+            <p class="mt-2 font-display text-lg font-bold">₪1,450,000</p>
+            <a href="https://wa.me/972524232314?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%93%D7%99%D7%A8%D7%AA%203%20%D7%97%D7%93%D7%A8%D7%99%D7%9D%20%D7%91%D7%91%D7%90%D7%A8%20%D7%A9%D7%91%D7%A2." target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105">פרטים בוואטסאפ</a>
+          </div>
+        </article>
+
+        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="ramot" data-rooms="4" data-price="1950000" data-tag="family">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop" alt="נכס" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+            <span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white">למשפחות</span>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-gold">רמות, באר שבע</p>
+            <h3 class="mt-1 font-display text-xl font-bold">דירת 4 חדרים משופצת</h3>
+            <div class="mt-3 flex flex-wrap gap-3 text-sm text-olive"><span>4 חד׳</span><span>·</span><span>105 מ״ר</span><span>·</span><span>חניה</span></div>
+            <p class="mt-2 font-display text-lg font-bold">₪1,950,000</p>
+            <a href="https://wa.me/972524232314?text=%D7%94%D7%99%D7%99%2C%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%9F%2F%D7%AA%20%D7%91%D7%93%D7%99%D7%A8%D7%AA%204%20%D7%97%D7%93%D7%A8%D7%99%D7%9D%20%D7%91%D7%A8%D7%9E%D7%95%D7%AA." target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105">פרטים בוואטסאפ</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- מצב ריק (כשהסינון לא מחזיר תוצאות) -->
+      <div id="empty" class="hidden py-16 text-center">
+        <p class="font-display text-2xl font-bold">לא נמצאו נכסים לפי הסינון</p>
+        <p class="mt-2 text-olive">נסו להרחיב את הקריטריונים, או דברו עם אמית — לעיתים יש נכסים שעוד לא פורסמו.</p>
+        <a href="https://wa.me/972524232314?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%A0%D7%9B%D7%A1%D7%99%D7%9D%20%D7%A9%D7%9E%D7%AA%D7%90%D7%99%D7%9E%D7%99%D7%9D%20%D7%9C%D7%99." target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-sm font-semibold text-white transition hover:brightness-105">דברו עם אמית</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink py-12 text-sand/70">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center md:flex-row md:text-right md:px-8">
+      <a href="index.html" class="font-display text-xl font-bold text-sand">עמית מהרבני <span class="text-gold">נדל״ן</span></a>
+      <p class="text-sm">להבים · רמות · באר שבע</p>
+      <p class="text-xs"><a href="tel:+972524232314" class="hover:text-sand">052-423-2314</a> · <a href="mailto:abnegevltd@gmail.com" class="hover:text-sand">abnegevltd@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE WHATSAPP -->
+  <a href="https://wa.me/972524232314?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%93%D7%A3%20%D7%94%D7%A0%D7%9B%D7%A1%D7%99%D7%9D%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D."
+     target="_blank" rel="noopener" aria-label="וואטסאפ"
+     class="fixed bottom-5 left-5 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3.5 text-sm font-semibold text-white shadow-2xl shadow-black/30 transition hover:scale-105 md:hidden">
+    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.359zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    וואטסאפ
+  </a>
+
+  <script>
+    const area=document.getElementById('f-area'), rooms=document.getElementById('f-rooms'),
+          price=document.getElementById('f-price'), reset=document.getElementById('f-reset'),
+          cards=[...document.querySelectorAll('.prop')], count=document.getElementById('count'),
+          empty=document.getElementById('empty');
+
+    function apply(){
+      const a=area.value, r=rooms.value?+rooms.value:0, p=price.value?+price.value:Infinity;
+      let shown=0;
+      cards.forEach(c=>{
+        const ok = (!a || c.dataset.area===a)
+                && (+c.dataset.rooms>=r)
+                && (+c.dataset.price<=p);
+        c.style.display = ok ? '' : 'none';
+        if(ok) shown++;
+      });
+      count.textContent = shown + ' נכסים';
+      empty.classList.toggle('hidden', shown>0);
+    }
+    [area,rooms,price].forEach(el=>el.addEventListener('change',apply));
+    reset.addEventListener('click',()=>{area.value='';rooms.value='';price.value='';apply();});
+    apply();
+  </script>
+</body>
+</html>
