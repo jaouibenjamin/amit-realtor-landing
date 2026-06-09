@@ -16,7 +16,10 @@
 ```
 
 ### עדכון נכסים (listings.js) — בלי לגעת בקוד
-כל הנכסים יושבים במערך `window.LISTINGS` בקובץ `assets/listings.js`. כל פריט: `area` (lehavim/ramot/beersheva), `rooms`, `price` (מספרים), `tag` (family/luxury), `img`, ו-`title`/`specs` בשלוש שפות. הכרטיסים והסינון נבנים אוטומטית מהנתונים — להוסיף/לעדכן נכס = לערוך את הקובץ הזה בלבד.
+כל הנכסים יושבים במערך `window.LISTINGS` בקובץ `assets/listings.js`. כל פריט: `area` (lehavim/ramot/beersheva), `rooms`, `price` (מספרים), `tag` (family/luxury), `img`, ו-`title`/`specs` בשלוש שפות. הכרטיסים והסינון נבנים אוטומטית מהנתונים — להוסיף/לעדכן נכס = לערוך את הקובץ הזה בלבד. **הקובץ מזין גם את עמוד הנכסים המלא וגם את 3 הכרטיסים הנבחרים בדף הבית** (3 הראשונים במערך).
+
+### תמונת שיתוף (OG)
+`assets/og-image.jpg` (1200×630) מוכנה ומחוברת. **לקראת launch:** כדאי להחליף את `content="assets/og-image.jpg"` בכתובת מלאה (`https://DOMAIN/assets/og-image.jpg`) — חלק מהפלטפורמות (פייסבוק/וואטסאפ) דורשות URL מוחלט.
 
 ### בנייה מחדש של ה-CSS (אם משנים classes/צבעים)
 ה-CSS מקומפל ל-`assets/styles.css`. לבנייה מחדש (מקומי):
