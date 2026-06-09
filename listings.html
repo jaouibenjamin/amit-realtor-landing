@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@300;400;500;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = { theme: { extend: {
-      colors: { ink:'#1c1a17', sand:'#f4efe7', stone:'#e7ddcd', gold:'#b08938', 'gold-d':'#8c6c2a', olive:'#4a4a3c' },
+      colors: { ink:'#0d0d10', sand:'#141417', char:'#1d1d21', stone:'#33333a', paper:'#f4f4f3', gold:'#c6c6cc', 'gold-d':'#a8a8af', olive:'#9a9aa2' },
       fontFamily: { display:['"Frank Ruhl Libre"','serif'], body:['"Heebo"','sans-serif'] },
     } } };
   </script>
@@ -22,14 +22,14 @@
     html[lang="en"] .font-display, html[lang="fr"] .font-display{font-family:'Cormorant Garamond',serif;}
     .grain::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");mix-blend-mode:multiply;}
     .hairline{letter-spacing:.28em;}
-    .lang-btn{opacity:.6;} .lang-btn.active{opacity:1;font-weight:700;color:#b08938;}
+    .lang-btn{opacity:.6;} .lang-btn.active{opacity:1;font-weight:700;color:#c6c6cc;}
   </style>
 </head>
 
-<body class="bg-sand text-ink antialiased">
+<body class="bg-sand text-paper antialiased">
 
   <!-- NAV -->
-  <header class="sticky top-0 z-40 border-b border-stone bg-sand/95 text-ink backdrop-blur">
+  <header class="sticky top-0 z-40 border-b border-stone bg-sand/95 text-paper backdrop-blur">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 md:px-8">
       <a href="index.html" aria-label="עמית מהרבני נדל״ן" class="block">
         <svg viewBox="0 0 260 96" class="h-12 w-auto" fill="currentColor" aria-hidden="true"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="20" y="90" width="220" height="2.2"/></svg>
@@ -59,7 +59,7 @@
   <section class="relative grain border-b border-stone bg-sand py-14 md:py-20">
     <div class="mx-auto max-w-7xl px-5 md:px-8">
       <p class="hairline mb-3 text-xs font-medium uppercase text-gold" data-i18n="ll.kicker">תיק נכסים מלא</p>
-      <h1 class="font-display text-4xl font-bold text-ink md:text-5xl" data-i18n="ll.title">כל הנכסים הזמינים</h1>
+      <h1 class="font-display text-4xl font-bold text-paper md:text-5xl" data-i18n="ll.title">כל הנכסים הזמינים</h1>
       <div class="mt-5 h-px w-14 bg-gold"></div>
       <p class="mt-5 max-w-2xl text-olive" data-i18n="ll.sub">סננו לפי אזור, מספר חדרים וטווח מחיר. מצאתם משהו? לחיצה אחת ואתם בשיחה עם עמית.</p>
     </div>
@@ -69,7 +69,7 @@
   <div class="sticky top-[72px] z-30 border-b border-stone bg-sand/95 backdrop-blur">
     <div class="mx-auto flex max-w-7xl flex-wrap items-end gap-4 px-5 py-4 md:px-8">
       <label class="flex flex-col gap-1 text-xs font-medium text-olive" data-i18n="ll.f.area">אזור
-        <select id="f-area" class="min-w-[150px] rounded-lg border border-stone bg-white px-3 py-2 text-sm text-ink">
+        <select id="f-area" class="min-w-[150px] rounded-lg border border-stone bg-char px-3 py-2 text-sm text-paper">
           <option value="" data-i18n="ll.all">הכל</option>
           <option value="lehavim" data-i18n="area.lehavim">להבים</option>
           <option value="ramot" data-i18n="area.ramot">רמות, באר שבע</option>
@@ -77,7 +77,7 @@
         </select>
       </label>
       <label class="flex flex-col gap-1 text-xs font-medium text-olive" data-i18n="ll.f.rooms">חדרים
-        <select id="f-rooms" class="min-w-[120px] rounded-lg border border-stone bg-white px-3 py-2 text-sm text-ink">
+        <select id="f-rooms" class="min-w-[120px] rounded-lg border border-stone bg-char px-3 py-2 text-sm text-paper">
           <option value="" data-i18n="ll.all">הכל</option>
           <option value="3" data-i18n="ll.rooms3">3 ומעלה</option>
           <option value="4" data-i18n="ll.rooms4">4 ומעלה</option>
@@ -86,48 +86,48 @@
         </select>
       </label>
       <label class="flex flex-col gap-1 text-xs font-medium text-olive" data-i18n="ll.f.price">מחיר עד
-        <select id="f-price" class="min-w-[150px] rounded-lg border border-stone bg-white px-3 py-2 text-sm text-ink">
+        <select id="f-price" class="min-w-[150px] rounded-lg border border-stone bg-char px-3 py-2 text-sm text-paper">
           <option value="" data-i18n="ll.nolimit">ללא הגבלה</option>
           <option value="1800000">₪1.8M</option><option value="2500000">₪2.5M</option>
           <option value="3500000">₪3.5M</option><option value="5000000">₪5M</option>
         </select>
       </label>
-      <button id="f-reset" class="rounded-lg border border-stone bg-white px-4 py-2 text-sm font-medium transition hover:border-gold hover:text-gold" data-i18n="ll.reset">איפוס</button>
+      <button id="f-reset" class="rounded-lg border border-stone bg-char px-4 py-2 text-sm font-medium transition hover:border-gold hover:text-gold" data-i18n="ll.reset">איפוס</button>
       <span id="count" class="ms-auto self-center text-sm text-olive"></span>
     </div>
   </div>
 
   <!-- GRID -->
-  <main class="bg-white py-12 md:py-16">
+  <main class="bg-sand py-12 md:py-16">
     <div class="mx-auto max-w-7xl px-5 md:px-8">
       <div id="grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
-        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="lehavim" data-rooms="4" data-price="2200000">
+        <article class="prop group overflow-hidden rounded-2xl bg-char ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="lehavim" data-rooms="4" data-price="2200000">
           <div class="relative aspect-[4/3] overflow-hidden"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white" data-i18n="tag.family">למשפחות</span></div>
           <div class="p-5"><p class="text-xs text-gold" data-i18n="area.lehavim">להבים</p><h3 class="mt-1 font-display text-xl font-bold" data-i18n="p1.t">דירת גן 4 חדרים</h3><div class="mt-3 text-sm text-olive" data-i18n="p1.s">4 חד׳ · 110 מ״ר · גינה</div><p class="mt-2 font-display text-lg font-bold">₪2,200,000</p><a href="#" data-wa-main target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105" data-i18n="card.cta">פרטים בוואטסאפ</a></div>
         </article>
 
-        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="ramot" data-rooms="5" data-price="3200000">
+        <article class="prop group overflow-hidden rounded-2xl bg-char ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="ramot" data-rooms="5" data-price="3200000">
           <div class="relative aspect-[4/3] overflow-hidden"><img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><span class="absolute top-3 right-3 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white" data-i18n="tag.luxury">יוקרה</span></div>
           <div class="p-5"><p class="text-xs text-gold" data-i18n="area.ramot">רמות, באר שבע</p><h3 class="mt-1 font-display text-xl font-bold" data-i18n="p2.t">פנטהאוז עם מרפסת</h3><div class="mt-3 text-sm text-olive" data-i18n="p2.s">5 חד׳ · 160 מ״ר · נוף</div><p class="mt-2 font-display text-lg font-bold">₪3,200,000</p><a href="#" data-wa-main target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105" data-i18n="card.cta">פרטים בוואטסאפ</a></div>
         </article>
 
-        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="beersheva" data-rooms="6" data-price="2800000">
+        <article class="prop group overflow-hidden rounded-2xl bg-char ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="beersheva" data-rooms="6" data-price="2800000">
           <div class="relative aspect-[4/3] overflow-hidden"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white" data-i18n="tag.family">למשפחות</span></div>
           <div class="p-5"><p class="text-xs text-gold" data-i18n="area.beersheva">באר שבע</p><h3 class="mt-1 font-display text-xl font-bold" data-i18n="p3.t">קוטג׳ 6 חדרים</h3><div class="mt-3 text-sm text-olive" data-i18n="p3.s">6 חד׳ · 180 מ״ר · 2 קומות</div><p class="mt-2 font-display text-lg font-bold">₪2,800,000</p><a href="#" data-wa-main target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105" data-i18n="card.cta">פרטים בוואטסאפ</a></div>
         </article>
 
-        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="lehavim" data-rooms="6" data-price="4200000">
+        <article class="prop group overflow-hidden rounded-2xl bg-char ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="lehavim" data-rooms="6" data-price="4200000">
           <div class="relative aspect-[4/3] overflow-hidden"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><span class="absolute top-3 right-3 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white" data-i18n="tag.luxury">יוקרה</span></div>
           <div class="p-5"><p class="text-xs text-gold" data-i18n="area.lehavim">להבים</p><h3 class="mt-1 font-display text-xl font-bold" data-i18n="p4.t">וילה 6 חדרים עם בריכה</h3><div class="mt-3 text-sm text-olive" data-i18n="p4.s">6 חד׳ · 260 מ״ר · בריכה</div><p class="mt-2 font-display text-lg font-bold">₪4,200,000</p><a href="#" data-wa-main target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105" data-i18n="card.cta">פרטים בוואטסאפ</a></div>
         </article>
 
-        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="beersheva" data-rooms="3" data-price="1450000">
+        <article class="prop group overflow-hidden rounded-2xl bg-char ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="beersheva" data-rooms="3" data-price="1450000">
           <div class="relative aspect-[4/3] overflow-hidden"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white" data-i18n="tag.family">למשפחות</span></div>
           <div class="p-5"><p class="text-xs text-gold" data-i18n="area.beersheva">באר שבע</p><h3 class="mt-1 font-display text-xl font-bold" data-i18n="p5.t">דירת 3 חדרים מחודשת</h3><div class="mt-3 text-sm text-olive" data-i18n="p5.s">3 חד׳ · 78 מ״ר · מרפסת</div><p class="mt-2 font-display text-lg font-bold">₪1,450,000</p><a href="#" data-wa-main target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105" data-i18n="card.cta">פרטים בוואטסאפ</a></div>
         </article>
 
-        <article class="prop group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="ramot" data-rooms="4" data-price="1950000">
+        <article class="prop group overflow-hidden rounded-2xl bg-char ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" data-area="ramot" data-rooms="4" data-price="1950000">
           <div class="relative aspect-[4/3] overflow-hidden"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white" data-i18n="tag.family">למשפחות</span></div>
           <div class="p-5"><p class="text-xs text-gold" data-i18n="area.ramot">רמות, באר שבע</p><h3 class="mt-1 font-display text-xl font-bold" data-i18n="p6.t">דירת 4 חדרים משופצת</h3><div class="mt-3 text-sm text-olive" data-i18n="p6.s">4 חד׳ · 105 מ״ר · חניה</div><p class="mt-2 font-display text-lg font-bold">₪1,950,000</p><a href="#" data-wa-main target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105" data-i18n="card.cta">פרטים בוואטסאפ</a></div>
         </article>
@@ -142,10 +142,10 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-ink py-12 text-sand/70">
+  <footer class="bg-ink py-12 text-paper/70">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center md:flex-row md:px-8">
-      <a href="index.html"><svg viewBox="0 0 260 132" class="h-16 w-auto text-sand" fill="currentColor" aria-label="עמית מהרבני נדל״ן · תיווך · נדל״ן · יזמות"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="22" y="90" width="216" height="1.6"/><text x="130" y="110" text-anchor="middle" font-family="'Heebo',sans-serif" font-size="12.5" letter-spacing="1.5" direction="rtl">תיווך · נדל״ן · יזמות</text></svg></a>
-      <p class="text-xs"><a href="tel:+972524232314" class="hover:text-sand">052-423-2314</a> · <a href="mailto:abnegevltd@gmail.com" class="hover:text-sand">abnegevltd@gmail.com</a></p>
+      <a href="index.html"><svg viewBox="0 0 260 132" class="h-16 w-auto text-paper" fill="currentColor" aria-label="עמית מהרבני נדל״ן · תיווך · נדל״ן · יזמות"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="22" y="90" width="216" height="1.6"/><text x="130" y="110" text-anchor="middle" font-family="'Heebo',sans-serif" font-size="12.5" letter-spacing="1.5" direction="rtl">תיווך · נדל״ן · יזמות</text></svg></a>
+      <p class="text-xs"><a href="tel:+972524232314" class="hover:text-paper">052-423-2314</a> · <a href="mailto:abnegevltd@gmail.com" class="hover:text-paper">abnegevltd@gmail.com</a></p>
     </div>
   </footer>
 

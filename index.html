@@ -16,7 +16,7 @@
   <script>
     /* מיתוג — שנה צבעים כאן להתאמה ללוגו */
     tailwind.config = { theme: { extend: {
-      colors: { ink:'#1c1a17', sand:'#f4efe7', stone:'#e7ddcd', gold:'#b08938', 'gold-d':'#8c6c2a', olive:'#4a4a3c' },
+      colors: { ink:'#0d0d10', sand:'#141417', char:'#1d1d21', stone:'#33333a', paper:'#f4f4f3', gold:'#c6c6cc', 'gold-d':'#a8a8af', olive:'#9a9aa2' },
       fontFamily: { display:['"Frank Ruhl Libre"','serif'], displayLat:['"Cormorant Garamond"','serif'], body:['"Heebo"','sans-serif'] },
     } } };
   </script>
@@ -31,14 +31,14 @@
     .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
     .reveal.in{opacity:1;transform:none;}
     .hairline{letter-spacing:.28em;}
-    .lang-btn{opacity:.6;} .lang-btn.active{opacity:1;font-weight:700;color:#b08938;}
+    .lang-btn{opacity:.6;} .lang-btn.active{opacity:1;font-weight:700;color:#c6c6cc;}
   </style>
 </head>
 
-<body class="bg-sand text-ink antialiased">
+<body class="bg-sand text-paper antialiased">
 
   <!-- NAV -->
-  <header class="fixed inset-x-0 top-0 z-40 text-ink transition-all" id="nav">
+  <header class="fixed inset-x-0 top-0 z-40 text-paper transition-all" id="nav">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 md:px-8">
       <a href="#top" aria-label="עמית מהרבני נדל״ן" class="block">
         <svg viewBox="0 0 260 96" class="h-12 w-auto" fill="currentColor" aria-hidden="true"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="20" y="90" width="220" height="2.2"/></svg>
@@ -70,7 +70,7 @@
   <!-- HERO — Ivory editorial -->
   <section id="top" class="relative grain min-h-screen overflow-hidden bg-sand">
     <div class="relative z-10 mx-auto flex min-h-screen max-w-4xl flex-col items-center justify-center px-5 py-32 text-center">
-      <div class="reveal text-ink">
+      <div class="reveal text-paper">
         <svg viewBox="0 0 260 132" class="mx-auto h-36 w-auto md:h-44" fill="currentColor" aria-label="עמית מהרבני נדל״ן · תיווך · נדל״ן · יזמות">
           <g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g>
           <text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text>
@@ -80,7 +80,7 @@
       </div>
       <div class="reveal mx-auto mt-9 h-px w-14 bg-gold" style="transition-delay:.1s"></div>
       <p class="reveal hairline mt-8 text-xs font-medium uppercase text-gold md:text-sm" style="transition-delay:.15s" data-i18n="hero.kicker">להבים · רמות · באר שבע</p>
-      <h1 class="reveal mt-4 font-display text-4xl font-bold leading-tight text-ink md:text-6xl" style="transition-delay:.2s" data-i18n="hero.title">הבית הבא שלכם מתחיל כאן.</h1>
+      <h1 class="reveal mt-4 font-display text-4xl font-bold leading-tight text-paper md:text-6xl" style="transition-delay:.2s" data-i18n="hero.title">הבית הבא שלכם מתחיל כאן.</h1>
       <p class="reveal mx-auto mt-5 max-w-xl text-base leading-relaxed text-olive md:text-lg" style="transition-delay:.3s" data-i18n="hero.sub">נכס דגל נבחר במיקום מבוקש. ליווי אישי, צילום מקצועי, ושקיפות מלאה לאורך כל הדרך.</p>
       <div class="reveal mt-9 flex flex-wrap items-center justify-center gap-4" style="transition-delay:.4s">
         <a href="#" data-wa-main target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-ink/10 transition hover:scale-[1.03] hover:brightness-105">
@@ -110,19 +110,19 @@
           <h2 class="font-display text-3xl font-bold leading-tight md:text-4xl" data-i18n="flag.title">בית פרטי מרווח עם נוף פתוח</h2>
           <p class="mt-5 leading-relaxed text-olive" data-i18n="flag.desc">תיאור הנכס המוביל יופיע כאן: מיקום, יתרונות, סביבה, וקרבה למוסדות חינוך וכבישים מהירים.</p>
           <ul class="mt-7 grid grid-cols-2 gap-4 text-sm">
-            <li class="flex items-center gap-3 rounded-xl bg-white/60 px-4 py-3 ring-1 ring-stone"><span class="text-gold">◆</span> <span data-i18n="flag.f1">מיזוג מרכזי</span></li>
-            <li class="flex items-center gap-3 rounded-xl bg-white/60 px-4 py-3 ring-1 ring-stone"><span class="text-gold">◆</span> <span data-i18n="flag.f2">חניה כפולה</span></li>
-            <li class="flex items-center gap-3 rounded-xl bg-white/60 px-4 py-3 ring-1 ring-stone"><span class="text-gold">◆</span> <span data-i18n="flag.f3">גינה מעוצבת</span></li>
-            <li class="flex items-center gap-3 rounded-xl bg-white/60 px-4 py-3 ring-1 ring-stone"><span class="text-gold">◆</span> <span data-i18n="flag.f4">ממ״ד</span></li>
+            <li class="flex items-center gap-3 rounded-xl bg-char/60 px-4 py-3 ring-1 ring-stone"><span class="text-gold">◆</span> <span data-i18n="flag.f1">מיזוג מרכזי</span></li>
+            <li class="flex items-center gap-3 rounded-xl bg-char/60 px-4 py-3 ring-1 ring-stone"><span class="text-gold">◆</span> <span data-i18n="flag.f2">חניה כפולה</span></li>
+            <li class="flex items-center gap-3 rounded-xl bg-char/60 px-4 py-3 ring-1 ring-stone"><span class="text-gold">◆</span> <span data-i18n="flag.f3">גינה מעוצבת</span></li>
+            <li class="flex items-center gap-3 rounded-xl bg-char/60 px-4 py-3 ring-1 ring-stone"><span class="text-gold">◆</span> <span data-i18n="flag.f4">ממ״ד</span></li>
           </ul>
-          <a href="#" data-wa-main target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white px-6 py-3 text-sm font-semibold transition hover:border-gold hover:text-gold" data-i18n="flag.cta">לתיאום סיור בוואטסאפ</a>
+          <a href="#" data-wa-main target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-2 rounded-full border border-stone bg-char px-6 py-3 text-sm font-semibold transition hover:border-gold hover:text-gold" data-i18n="flag.cta">לתיאום סיור בוואטסאפ</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- PORTFOLIO -->
-  <section id="portfolio" class="bg-white py-20 md:py-28">
+  <section id="portfolio" class="bg-sand py-20 md:py-28">
     <div class="mx-auto max-w-7xl px-5 md:px-8">
       <div class="reveal mb-12 flex flex-wrap items-end justify-between gap-4">
         <div>
@@ -132,7 +132,7 @@
         <p class="max-w-sm text-sm text-olive" data-i18n="port.sub">מבחר מתוך הנכסים הזמינים. לרשימה המלאה והסינון — עברו לעמוד כל הנכסים.</p>
       </div>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="reveal group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10">
+        <article class="reveal group overflow-hidden rounded-2xl bg-char ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10">
           <div class="relative aspect-[4/3] overflow-hidden">
             <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
             <span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white" data-i18n="tag.family">למשפחות</span>
@@ -144,7 +144,7 @@
             <a href="#" data-wa-main target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105" data-i18n="card.cta">פרטים בוואטסאפ</a>
           </div>
         </article>
-        <article class="reveal group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" style="transition-delay:.1s">
+        <article class="reveal group overflow-hidden rounded-2xl bg-char ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" style="transition-delay:.1s">
           <div class="relative aspect-[4/3] overflow-hidden">
             <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
             <span class="absolute top-3 right-3 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white" data-i18n="tag.luxury">יוקרה</span>
@@ -156,7 +156,7 @@
             <a href="#" data-wa-main target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] py-2.5 text-sm font-semibold text-white transition hover:brightness-105" data-i18n="card.cta">פרטים בוואטסאפ</a>
           </div>
         </article>
-        <article class="reveal group overflow-hidden rounded-2xl bg-sand ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" style="transition-delay:.2s">
+        <article class="reveal group overflow-hidden rounded-2xl bg-char ring-1 ring-stone transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-ink/10" style="transition-delay:.2s">
           <div class="relative aspect-[4/3] overflow-hidden">
             <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
             <span class="absolute top-3 right-3 rounded-full bg-gold px-3 py-1 text-xs font-semibold text-white" data-i18n="tag.family">למשפחות</span>
@@ -170,13 +170,13 @@
         </article>
       </div>
       <div class="reveal mt-12 text-center">
-        <a href="listings.html" class="inline-flex items-center gap-2 rounded-full border border-ink/15 px-8 py-3.5 text-sm font-semibold transition hover:border-gold hover:text-gold"><span data-i18n="port.viewall">צפו בכל הנכסים הזמינים</span> <span aria-hidden="true">←</span></a>
+        <a href="listings.html" class="inline-flex items-center gap-2 rounded-full border border-stone px-8 py-3.5 text-sm font-semibold transition hover:border-gold hover:text-gold"><span data-i18n="port.viewall">צפו בכל הנכסים הזמינים</span> <span aria-hidden="true">←</span></a>
       </div>
     </div>
   </section>
 
   <!-- SOLD -->
-  <section id="sold" class="relative grain bg-stone/50 py-20 md:py-28">
+  <section id="sold" class="relative grain bg-sand py-20 md:py-28">
     <div class="mx-auto max-w-7xl px-5 md:px-8">
       <div class="reveal mb-12 max-w-2xl">
         <p class="hairline mb-3 text-xs font-medium uppercase text-gold" data-i18n="sold.kicker">תוצאות מדברות</p>
@@ -184,7 +184,7 @@
         <p class="mt-4 text-olive" data-i18n="sold.sub">עסקאות שנסגרו בליווי עמית — מחיר, זמן עד מכירה ושקיפות מלאה. (נתונים לדוגמה — החליפו בעסקאות אמיתיות)</p>
       </div>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="reveal overflow-hidden rounded-2xl bg-white ring-1 ring-stone shadow-sm">
+        <article class="reveal overflow-hidden rounded-2xl bg-char ring-1 ring-stone shadow-sm">
           <div class="relative aspect-[16/10] overflow-hidden">
             <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover" />
             <span class="absolute top-3 right-3 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white" data-i18n="sold.badge">נמכר</span>
@@ -199,7 +199,7 @@
             </dl>
           </div>
         </article>
-        <article class="reveal overflow-hidden rounded-2xl bg-white ring-1 ring-stone shadow-sm" style="transition-delay:.1s">
+        <article class="reveal overflow-hidden rounded-2xl bg-char ring-1 ring-stone shadow-sm" style="transition-delay:.1s">
           <div class="relative aspect-[16/10] overflow-hidden">
             <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover" />
             <span class="absolute top-3 right-3 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white" data-i18n="sold.badge">נמכר</span>
@@ -214,7 +214,7 @@
             </dl>
           </div>
         </article>
-        <article class="reveal overflow-hidden rounded-2xl bg-white ring-1 ring-stone shadow-sm" style="transition-delay:.2s">
+        <article class="reveal overflow-hidden rounded-2xl bg-char ring-1 ring-stone shadow-sm" style="transition-delay:.2s">
           <div class="relative aspect-[16/10] overflow-hidden">
             <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=1200&auto=format&fit=crop" alt="" class="h-full w-full object-cover" />
             <span class="absolute top-3 right-3 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white" data-i18n="sold.badge">נמכר</span>
@@ -244,26 +244,26 @@
           <p class="hairline mb-3 text-xs font-medium uppercase text-gold" data-i18n="about.kicker">הסוכן שלכם</p>
           <h2 class="font-display text-3xl font-bold md:text-4xl" data-i18n="about.title">על עמית מהרבני</h2>
           <p class="mt-5 leading-relaxed text-olive" data-i18n="about.desc">עמית מהרבני מלווה משפחות ורוכשי נכסי יוקרה באזור הנגב — מלהבים ועד באר שבע. זמינות אישית, היכרות עמוקה עם השכונות, ושירות שקוף מהסיור הראשון ועד מסירת המפתח.</p>
-          <div class="mt-8 flex flex-wrap gap-8 text-ink">
+          <div class="mt-8 flex flex-wrap gap-8 text-paper">
             <div><div class="font-display text-3xl font-bold text-gold">+10</div><div class="text-sm text-olive" data-i18n="about.s1">שנות ניסיון</div></div>
             <div><div class="font-display text-3xl font-bold text-gold">+200</div><div class="text-sm text-olive" data-i18n="about.s2">עסקאות</div></div>
             <div><div class="font-display text-3xl font-bold text-gold">100%</div><div class="text-sm text-olive" data-i18n="about.s3">ליווי אישי</div></div>
           </div>
         </div>
         <div class="reveal space-y-5" style="transition-delay:.15s">
-          <figure class="rounded-2xl bg-white p-6 ring-1 ring-stone shadow-sm">
+          <figure class="rounded-2xl bg-char p-6 ring-1 ring-stone shadow-sm">
             <div class="mb-2 text-gold">★★★★★</div>
-            <blockquote class="leading-relaxed text-ink" data-i18n="t1.q">„ליווי מקצועי ואדיב מהרגע הראשון. עמית הבין בדיוק מה חיפשנו ומצא לנו בית מושלם בלהבים."</blockquote>
+            <blockquote class="leading-relaxed text-paper" data-i18n="t1.q">„ליווי מקצועי ואדיב מהרגע הראשון. עמית הבין בדיוק מה חיפשנו ומצא לנו בית מושלם בלהבים."</blockquote>
             <figcaption class="mt-3 text-sm text-olive" data-i18n="t1.a">— משפחת [שם], להבים</figcaption>
           </figure>
-          <figure class="rounded-2xl bg-white p-6 ring-1 ring-stone shadow-sm">
+          <figure class="rounded-2xl bg-char p-6 ring-1 ring-stone shadow-sm">
             <div class="mb-2 text-gold">★★★★★</div>
-            <blockquote class="leading-relaxed text-ink" data-i18n="t2.q">„שקיפות מלאה לאורך כל העסקה. הרגשנו בידיים טובות."</blockquote>
+            <blockquote class="leading-relaxed text-paper" data-i18n="t2.q">„שקיפות מלאה לאורך כל העסקה. הרגשנו בידיים טובות."</blockquote>
             <figcaption class="mt-3 text-sm text-olive" data-i18n="t2.a">— [שם], באר שבע</figcaption>
           </figure>
-          <figure class="rounded-2xl bg-white p-6 ring-1 ring-stone shadow-sm">
+          <figure class="rounded-2xl bg-char p-6 ring-1 ring-stone shadow-sm">
             <div class="mb-2 text-gold">★★★★★</div>
-            <blockquote class="leading-relaxed text-ink" data-i18n="t3.q">„זמין תמיד, מקצועי, ונתן לנו ביטחון בכל שלב."</blockquote>
+            <blockquote class="leading-relaxed text-paper" data-i18n="t3.q">„זמין תמיד, מקצועי, ונתן לנו ביטחון בכל שלב."</blockquote>
             <figcaption class="mt-3 text-sm text-olive" data-i18n="t3.a">— [שם], רמות</figcaption>
           </figure>
         </div>
@@ -280,7 +280,7 @@
         <p class="mx-auto mt-4 max-w-xl text-olive" data-i18n="form.sub">מלאו את הפרטים — בלחיצה אחת זה נשלח לעמית בוואטסאפ עם כל המידע מסודר.</p>
       </div>
 
-      <form id="lead-form" class="reveal mt-10 grid gap-4 rounded-2xl bg-white p-6 shadow-xl shadow-ink/5 ring-1 ring-stone md:grid-cols-2" style="transition-delay:.1s">
+      <form id="lead-form" class="reveal mt-10 grid gap-4 rounded-2xl bg-char p-6 shadow-xl shadow-ink/5 ring-1 ring-stone md:grid-cols-2" style="transition-delay:.1s">
         <label class="flex flex-col gap-1.5 text-sm font-medium md:col-span-2">
           <span data-i18n="form.name">שם מלא</span>
           <input name="name" type="text" required class="rounded-lg border border-stone bg-sand/40 px-4 py-2.5 text-base focus:border-gold focus:outline-none" />
@@ -328,16 +328,16 @@
 
       <p class="mt-6 text-center text-sm text-olive">
         <span data-i18n="form.or">או ישירות:</span>
-        <a href="tel:+972524232314" class="font-medium text-ink hover:text-gold">052-423-2314</a>
-        · <a href="mailto:abnegevltd@gmail.com" class="font-medium text-ink hover:text-gold">abnegevltd@gmail.com</a>
+        <a href="tel:+972524232314" class="font-medium text-paper hover:text-gold">052-423-2314</a>
+        · <a href="mailto:abnegevltd@gmail.com" class="font-medium text-paper hover:text-gold">abnegevltd@gmail.com</a>
       </p>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-ink py-12 text-sand/70">
+  <footer class="bg-ink py-12 text-paper/70">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center md:flex-row md:px-8">
-      <svg viewBox="0 0 260 132" class="h-16 w-auto text-sand" fill="currentColor" aria-label="עמית מהרבני נדל״ן · תיווך · נדל״ן · יזמות"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="22" y="90" width="216" height="1.6"/><text x="130" y="110" text-anchor="middle" font-family="'Heebo',sans-serif" font-size="12.5" letter-spacing="1.5" direction="rtl">תיווך · נדל״ן · יזמות</text></svg>
+      <svg viewBox="0 0 260 132" class="h-16 w-auto text-paper" fill="currentColor" aria-label="עמית מהרבני נדל״ן · תיווך · נדל״ן · יזמות"><g><path d="M14 60 L30 12 L46 60 L38.5 60 L30 33 L21.5 60 Z"/><path d="M56 60 L56 12 L64 12 L74 38 L84 12 L92 12 L92 60 L84.5 60 L84.5 27 L75.5 50 L72.5 50 L63.5 27 L63.5 60 Z"/><rect x="103" y="12" width="7.5" height="48"/><path d="M120 12 L156 12 L156 19.5 L141.8 19.5 L141.8 60 L134.2 60 L134.2 19.5 L120 19.5 Z"/></g><text x="130" y="82" text-anchor="middle" font-family="'Futura','Century Gothic','Heebo',sans-serif" font-size="15" letter-spacing="3.5">MAHRABANI</text><rect x="22" y="90" width="216" height="1.6"/><text x="130" y="110" text-anchor="middle" font-family="'Heebo',sans-serif" font-size="12.5" letter-spacing="1.5" direction="rtl">תיווך · נדל״ן · יזמות</text></svg>
       <p class="text-sm" data-i18n="footer.tagline">להבים · רמות · באר שבע — נכסי יוקרה ומשפחה</p>
       <p class="text-xs">© <span id="year"></span> · <span data-i18n="footer.rights">כל הזכויות שמורות</span></p>
     </div>
