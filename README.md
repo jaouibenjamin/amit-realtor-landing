@@ -1,20 +1,33 @@
 # דף נחיתה — עמית מהרבני נדל״ן
 
-דף נחיתה בעברית (RTL) להצגת נכסים ולאיסוף לידים. CTA ראשי = וואטסאפ, טופס ליד משני (Jotform).
-סטטי לחלוטין: HTML + Tailwind (CDN). אין שלב build, אין dependencies.
+דף נחיתה בעברית (RTL) להצגת נכסים ולאיסוף לידים. CTA ראשי = וואטסאפ.
+סטטי: HTML + CSS מקומפל (Tailwind, **self-hosted** — לא CDN).
 
 ```
 .
-├── index.html      ← דף הבית (hero, נכסים נבחרים, נמכרו לאחרונה, על אמית, טופס)
-├── listings.html   ← עמוד כל הנכסים + סינון (אזור / חדרים / מחיר)
-├── assets/         ← תמונות/וידאו/לוגו אמיתיים (כרגע ריק — placeholders חיצוניים)
+├── index.html        ← דף הבית (hero דינמי, נכסים נבחרים, נמכרו, על עמית, טופס)
+├── listings.html     ← עמוד כל הנכסים + סינון (אזור / חדרים / מחיר)
+├── assets/
+│   ├── styles.css    ← Tailwind מקומפל (production) — נטען במקום ה-CDN
+│   ├── listings.js   ← *מקור הנתונים של הנכסים* — עורכים כאן בלבד
+│   ├── logo.svg · favicon.svg · jerusalem-skyline.svg
+├── robots.txt · sitemap.xml
 └── README.md
 ```
 
-### עמוד הנכסים (listings.html)
-כל כרטיס נכס נושא תגיות סינון ב-`data-*`:
-`data-area` (lehavim / ramot / beersheva) · `data-rooms` (מספר) · `data-price` (מספר, לסינון "מחיר עד") · `data-tag` (family / luxury).
-לעדכון: שכפל `<article class="prop ...">`, עדכן תמונה/כותרת/מפרט/מחיר/קישור וואטסאפ ואת ערכי ה-`data-*`. הסינון עובד אוטומטית.
+### עדכון נכסים (listings.js) — בלי לגעת בקוד
+כל הנכסים יושבים במערך `window.LISTINGS` בקובץ `assets/listings.js`. כל פריט: `area` (lehavim/ramot/beersheva), `rooms`, `price` (מספרים), `tag` (family/luxury), `img`, ו-`title`/`specs` בשלוש שפות. הכרטיסים והסינון נבנים אוטומטית מהנתונים — להוסיף/לעדכן נכס = לערוך את הקובץ הזה בלבד.
+
+### בנייה מחדש של ה-CSS (אם משנים classes/צבעים)
+ה-CSS מקומפל ל-`assets/styles.css`. לבנייה מחדש (מקומי):
+```bash
+npx tailwindcss@3 -i input.css -o assets/styles.css --minify
+# content: index.html, listings.html, assets/*.js · התמה (צבעים/פונטים) ב-tailwind.config.js
+```
+(שמרו `tailwind.config.js` + `input.css` עם הגדרות התמה — ראו היסטוריית הבנייה.)
+
+### SEO / שיתוף / אינדוקס
+favicon, תגי OG/Twitter, `robots.txt`, `sitemap.xml` — מוגדרים. **כרגע `noindex` פעיל** (pre-launch). לפני עלייה לאוויר: הסירו את `<meta name="robots" content="noindex">` משני העמודים, החליפו `REPLACE-WITH-DOMAIN` ב-`sitemap.xml`/canonical, ופתחו את `robots.txt`. מומלץ להוסיף `assets/og-image.jpg` (1200×630) לתצוגה בשיתוף.
 
 ### נמכרו לאחרונה (ב-index.html, סקשן `#sold`)
 3 כרטיסי הוכחה חברתית עם נתוני placeholder (`₪X,XXX,XXX`, `X שבועות`). החלף בעסקאות אמיתיות — זה מנוע האמון החזק ביותר לסוכן.

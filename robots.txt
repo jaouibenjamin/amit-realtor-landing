@@ -1,0 +1,6 @@
+# Pre-launch: indexing blocked. At launch, comment out the Disallow below
+# (or replace with "Allow: /") and uncomment the Sitemap line with the real domain.
+User-agent: *
+Disallow: /
+
+# Sitemap: https://REPLACE-WITH-DOMAIN/sitemap.xml
