@@ -433,6 +433,8 @@
       const intentTxt = f.intent.options[f.intent.selectedIndex].textContent;
       /* 1) שמירת הליד ל-Formspree (אם הוגדר) — ברקע, שקט */
       if(FORMSPREE.indexOf('XXXX')===-1){ try{ fetch(FORMSPREE,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}); }catch(err){} }
+      /* 1b) שליחת הליד ל-CRM של עמית (Base44 — פונקציית submitLead) */
+      try{ fetch('https://tentacled-estate-flow-pro.base44.app/functions/submitLead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:f.name.value,phone:f.phone.value,intent:f.intent.value,area:f.area.value,budget:f.budget.value,note:f.note.value,_gotcha:f._gotcha?f._gotcha.value:''})}); }catch(err){}
       /* 2) פתיחת וואטסאפ עם ההודעה המסודרת (CTA ראשי) */
       const lines=[ d['wa.lead'],
         `${L.name}: ${f.name.value}`,
